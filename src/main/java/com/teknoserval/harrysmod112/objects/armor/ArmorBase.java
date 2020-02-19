@@ -14,7 +14,7 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.COMBAT);
+		setCreativeTab(HarrysMod112.TUTORIAL);
 		
 		ItemInit.ITEMS.add(this);
 		

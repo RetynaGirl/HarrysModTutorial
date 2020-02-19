@@ -17,3 +17,6 @@ item.boots_copper.name=Copper Boots
 
 //Blocks
 tile.block_copper.name=Copper Block
+
+//Creative tabs
+itemGroup.tutorialtab=Tutorial Mod

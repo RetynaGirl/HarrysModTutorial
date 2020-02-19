@@ -1,8 +1,10 @@
 package com.teknoserval.harrysmod112;
 
 import com.teknoserval.harrysmod112.proxy.CommonProxy;
+import com.teknoserval.harrysmod112.tabs.TutorialTab;
 import com.teknoserval.harrysmod112.util.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -16,6 +18,8 @@ public class HarrysMod112 {
 	
 	@Instance
 	public static HarrysMod112 instance;
+	
+	public static final CreativeTabs TUTORIAL = new TutorialTab("tutorialtab");
 	
 	@SidedProxy(clientSide = Reference.CLIENT)
 	public static CommonProxy proxy;
