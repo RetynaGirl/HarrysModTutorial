@@ -3,6 +3,7 @@ package com.teknoserval.harrysmod112;
 import com.teknoserval.harrysmod112.proxy.CommonProxy;
 import com.teknoserval.harrysmod112.tabs.TutorialTab;
 import com.teknoserval.harrysmod112.util.Reference;
+import com.teknoserval.harrysmod112.util.handlers.RegistryHandler;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -26,6 +27,8 @@ public class HarrysMod112 {
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
+		
+		RegistryHandler.otherRegistries();
 		
 	}
 	
