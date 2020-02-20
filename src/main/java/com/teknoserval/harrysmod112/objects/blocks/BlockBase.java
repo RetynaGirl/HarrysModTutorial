@@ -3,7 +3,7 @@ package com.teknoserval.harrysmod112.objects.blocks;
 import com.teknoserval.harrysmod112.HarrysMod112;
 import com.teknoserval.harrysmod112.init.BlockInit;
 import com.teknoserval.harrysmod112.init.ItemInit;
-import com.teknoserval.harrysmod112.util.IHasModel;
+import com.teknoserval.harrysmod112.util.interfaces.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

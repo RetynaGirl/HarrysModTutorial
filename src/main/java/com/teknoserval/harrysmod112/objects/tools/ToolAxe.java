@@ -5,7 +5,7 @@ import java.util.Set;
 import com.google.common.collect.Sets;
 import com.teknoserval.harrysmod112.HarrysMod112;
 import com.teknoserval.harrysmod112.init.ItemInit;
-import com.teknoserval.harrysmod112.util.IHasModel;
+import com.teknoserval.harrysmod112.util.interfaces.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
