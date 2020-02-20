@@ -1,0 +1,7 @@
+{
+    "variants": 
+    {
+        "variant=aluminum": { "model": "harrysoldmod:ore_end_aluminum" },
+        "variant=copper": {"model": "harrysoldmod:ore_end_copper"}
+    }
+}

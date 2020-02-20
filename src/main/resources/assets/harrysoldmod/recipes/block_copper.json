@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "B"        
+    ],
+    
+    "key": 
+    {
+        "B": 
+        {
+            "item": "harrysoldmod:block_copper"
+        }
+    },
+    
+    "result": 
+    {
+        "item": "harrysoldmod:ingot_copper",
+        "count": 9
+    }
+}

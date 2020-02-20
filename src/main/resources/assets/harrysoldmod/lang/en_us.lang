@@ -17,6 +17,12 @@ item.boots_copper.name=Copper Boots
 
 //Blocks
 tile.block_copper.name=Copper Block
+tile.ore_overworld_aluminum.name=Aluminum Ore
+tile.ore_overworld_copper.name=Copper Ore
+tile.ore_nether_aluminum.name=Aluminum Ore
+tile.ore_nether_copper.name=Copper Ore
+tile.ore_end_aluminum.name=Aluminum Ore
+tile.ore_end_copper.name=Copper Ore
 
 //Creative tabs
 itemGroup.tutorialtab=Tutorial Mod
