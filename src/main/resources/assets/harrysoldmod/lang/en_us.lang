@@ -24,5 +24,22 @@ tile.ore_nether_copper.name=Copper Ore
 tile.ore_end_aluminum.name=Aluminum Ore
 tile.ore_end_copper.name=Copper Ore
 
+tile.log_mahogany.name=Mahogany Log
+tile.log_cedar.name=Cedar Log
+tile.log_willow.name=Willow Log
+
+tile.wood_planks_mahogany.name=Mahogany Plank
+tile.wood_planks_cedar.name=Cedar Plank
+tile.wood_planks_willow.name=Willow Plank
+
+tile.leaves_mahogany_null.name=Mahogany Leaves
+tile.leaves_cedar_null.name=Cedar Leaves
+tile.leaves_willow_null.name=Willow Leaves
+
+tile.sapling_mahogany.name=Mahogany Sapling
+tile.sapling_cedar.name=Cedar Sapling
+tile.sapling_willow.name=Willow Sapling
+
+
 //Creative tabs
 itemGroup.tutorialtab=Tutorial Mod

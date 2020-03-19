@@ -1,0 +1,7 @@
+{
+    "variants": 
+    {
+        "stage=0": { "model": "harrysoldmod:sapling_mahogany" },
+        "stage=1": { "model": "harrysoldmod:sapling_mahogany" }
+    }
+}

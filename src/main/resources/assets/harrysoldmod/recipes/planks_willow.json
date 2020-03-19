@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "B"        
+    ],
+    
+    "key": 
+    {
+        "B": 
+        {
+            "item": "harrysoldmod:log_willow"
+        }
+    },
+    
+    "result": 
+    {
+        "item": "harrysoldmod:wood_planks_willow",
+        "count": 4
+    }
+}

@@ -3,7 +3,7 @@ package com.teknoserval.harrysmod112.world.gen;
 import java.util.Random;
 
 import com.teknoserval.harrysmod112.init.BlockInit;
-import com.teknoserval.harrysmod112.objects.blocks.BlockOres;
+import com.teknoserval.harrysmod112.objects.blocks.BlockBaseOre;
 import com.teknoserval.harrysmod112.util.handlers.EnumHandler;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -23,13 +23,13 @@ public class WorldGenCustomOres implements IWorldGenerator {
 	
 	public WorldGenCustomOres() {
 		
-		ore_nether_copper = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.COPPER), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		ore_end_copper = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.COPPER), 9, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_overworld_copper = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.COPPER), 9, BlockMatcher.forBlock(Blocks.STONE));
+		ore_nether_copper = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.COPPER), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_end_copper = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.COPPER), 9, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_overworld_copper = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.COPPER), 9, BlockMatcher.forBlock(Blocks.STONE));
 		
-		ore_nether_aluminum = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		ore_end_aluminum = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.END_STONE));
-		ore_overworld_aluminum = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandler.EnumType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.STONE));
+		ore_nether_aluminum = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_end_aluminum = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_overworld_aluminum = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockBaseOre.VARIANT, EnumHandler.OreType.ALUMINUM), 9, BlockMatcher.forBlock(Blocks.STONE));
 		
 	}
 	

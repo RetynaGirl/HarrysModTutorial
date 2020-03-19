@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        
+        
+        "stage=0": { "model": "harrysoldmod:sapling_willow" },
+        "stage=1": { "model": "harrysoldmod:sapling_willow" }
+    }
+}
