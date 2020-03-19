@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "harrysoldmod:log_mahogany" },
+        "axis=z":   { "model": "harrysoldmod:log_mahogany", "x": 90 },
+        "axis=x":   { "model": "harrysoldmod:log_mahogany", "x": 90, "y": 90 },
+        "axis=none": { "model": "harrysoldmod:log_mahogany_bark" }
+    }
+}

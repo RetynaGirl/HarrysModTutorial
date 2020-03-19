@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "B"        
+    ],
+    
+    "key": 
+    {
+        "B": 
+        {
+            "item": "harrysoldmod:log_cedar"
+        }
+    },
+    
+    "result": 
+    {
+        "item": "harrysoldmod:wood_planks_cedar",
+        "count": 4
+    }
+}

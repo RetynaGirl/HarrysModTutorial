@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "B"        
+    ],
+    
+    "key": 
+    {
+        "B": 
+        {
+            "item": "harrysoldmod:log_mahogany"
+        }
+    },
+    
+    "result": 
+    {
+        "item": "harrysoldmod:wood_planks_mahogany",
+        "count": 4
+    }
+}

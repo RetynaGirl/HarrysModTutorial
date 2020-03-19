@@ -1,0 +1,8 @@
+{
+    "variants": 
+    {
+        "variant=mahogany": { "model": "harrysoldmod:wood_planks_mahogany" },
+        "variant=cedar": { "model": "harrysoldmod:wood_planks_cedar" },
+        "variant=willow": {"model": "harrysoldmod:wood_planks_willow"}
+    }
+}

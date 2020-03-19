@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "check_decay=true,decayable=true": { "model": "harrysoldmod:wood_leaves_mahogany" }, 
+        "check_decay=true,decayable=false": { "model": "harrysoldmod:wood_leaves_mahogany" },
+        "check_decay=false,decayable=true": { "model": "harrysoldmod:wood_leaves_mahogany" },
+        "check_decay=false,decayable=false": { "model": "harrysoldmod:wood_leaves_mahogany" }       
+    }
+}

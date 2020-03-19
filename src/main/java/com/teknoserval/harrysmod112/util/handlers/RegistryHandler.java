@@ -3,6 +3,7 @@ package com.teknoserval.harrysmod112.util.handlers;
 import com.teknoserval.harrysmod112.init.BlockInit;
 import com.teknoserval.harrysmod112.init.ItemInit;
 import com.teknoserval.harrysmod112.util.interfaces.IHasModel;
+import com.teknoserval.harrysmod112.world.gen.WorldGenCustomTrees;
 import com.teknoserval.harrysmod112.world.gen.WorldGenCustomOres;
 
 import net.minecraft.block.Block;
@@ -58,6 +59,7 @@ public class RegistryHandler {
 	public static void otherRegistries() {
 		
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
+		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 		
 	}
 

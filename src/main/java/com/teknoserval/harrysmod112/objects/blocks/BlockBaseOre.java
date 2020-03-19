@@ -23,18 +23,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockOres extends Block implements IHasModel, IMetaName{
+public class BlockBaseOre extends Block implements IHasModel, IMetaName{
 	
-	public static final PropertyEnum<EnumHandler.EnumType> VARIANT = PropertyEnum.<EnumHandler.EnumType>create("variant", EnumHandler.EnumType.class);
+	public static final PropertyEnum<EnumHandler.OreType> VARIANT = PropertyEnum.<EnumHandler.OreType>create("variant", EnumHandler.OreType.class);
 	
 	private String name, dimension;
 	
-	public BlockOres(String name, String dimension) {
+	public BlockBaseOre(String name, String dimension) {
 		super(Material.ROCK);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(HarrysMod112.TUTORIAL);
-		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.COPPER));
+		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.OreType.COPPER));
 		
 		this.name = name;
 		this.dimension = dimension;
@@ -47,21 +47,21 @@ public class BlockOres extends Block implements IHasModel, IMetaName{
 	@Override
 	public int damageDropped(IBlockState state) {
 
-		return ((EnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((EnumHandler.OreType)state.getValue(VARIANT)).getMeta();
 		
 	}
 	
 	@Override
 	public int getMetaFromState(IBlockState state) {
 
-		return ((EnumHandler.EnumType)state.getValue(VARIANT)).getMeta();
+		return ((EnumHandler.OreType)state.getValue(VARIANT)).getMeta();
 		
 	}
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 
-		return this.getDefaultState().withProperty(VARIANT, EnumHandler.EnumType.byMetadata(meta));
+		return this.getDefaultState().withProperty(VARIANT, EnumHandler.OreType.byMetadata(meta));
 	
 	}
 	
@@ -76,7 +76,7 @@ public class BlockOres extends Block implements IHasModel, IMetaName{
 	@Override
 	public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
 		
-		for(EnumHandler.EnumType variant : EnumHandler.EnumType.values()) {
+		for(EnumHandler.OreType variant : EnumHandler.OreType.values()) {
 			
 			items.add(new ItemStack(this, 1, variant.getMeta()));
 			
@@ -93,9 +93,9 @@ public class BlockOres extends Block implements IHasModel, IMetaName{
 	@Override
 	public void registerModels() {
 		
-		for(int i = 0; i < EnumHandler.EnumType.values().length; i++) {
+		for(int i = 0; i < EnumHandler.OreType.values().length; i++) {
 			
-			HarrysMod112.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore_" + this.dimension + "_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
+			HarrysMod112.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore_" + this.dimension + "_" + EnumHandler.OreType.values()[i].getName(), "inventory");
 			
 		}
 		
@@ -104,7 +104,7 @@ public class BlockOres extends Block implements IHasModel, IMetaName{
 	@Override
 	public String getSpeacialName(ItemStack stack) {
 		// TODO Auto-generated method stub
-		return EnumHandler.EnumType.values()[stack.getItemDamage()].getName();
+		return EnumHandler.OreType.values()[stack.getItemDamage()].getName();
 	}
 
 }
