@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import com.teknoserval.harrysmod112.world.biomes.BiomeCopper;
 import com.teknoserval.harrysmod112.world.gen.generators.WorldGenCedarTree;
 import com.teknoserval.harrysmod112.world.gen.generators.WorldGenMahoganyTree;
 import com.teknoserval.harrysmod112.world.gen.generators.WorldGenWillowTree;
@@ -37,7 +38,7 @@ public class WorldGenCustomTrees implements IWorldGenerator {
 
 		case 0:
 
-			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, .2D, -1, 0, BiomePlains.class);
+			runGenerator(MAHOGANY, world, random, chunkX, chunkZ, .2D, -1, 0, BiomePlains.class, BiomeCopper.class);
 			runGenerator(CEDAR, world, random, chunkX, chunkZ, .5D, -1, 0, BiomeTaiga.class);
 			runGenerator(WILLOW, world, random, chunkX, chunkZ, .3D, -1, 0, BiomeForest.class);
 

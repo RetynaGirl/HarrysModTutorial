@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "harrysoldmod:blocks/block_red_dirt",
+        "bottom": "harrysoldmod:blocks/block_red_dirt",
+        "top": "harrysoldmod:blocks/block_red_grass_top",
+        "side": "harrysoldmod:blocks/block_red_grass_side"
+    }
+}
