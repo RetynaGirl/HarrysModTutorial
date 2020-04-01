@@ -4,15 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.teknoserval.harrysmod112.objects.blocks.BlockBase;
+import com.teknoserval.harrysmod112.objects.blocks.BlockBaseDirt;
+import com.teknoserval.harrysmod112.objects.blocks.BlockBaseGrass;
 import com.teknoserval.harrysmod112.objects.blocks.BlockBaseLeaves;
 import com.teknoserval.harrysmod112.objects.blocks.BlockBaseLog;
+import com.teknoserval.harrysmod112.objects.blocks.BlockBaseOre;
 import com.teknoserval.harrysmod112.objects.blocks.BlockBasePlanks;
 import com.teknoserval.harrysmod112.objects.blocks.BlockBaseSapling;
-import com.teknoserval.harrysmod112.objects.blocks.BlockBaseOre;
 import com.teknoserval.harrysmod112.util.handlers.EnumHandler.WoodType;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.Material;
 
 public class BlockInit {
@@ -20,6 +21,8 @@ public class BlockInit {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
 	public static final Block BLOCK_COPPER = new BlockBase("block_copper", Material.IRON);
+	public static final Block BLOCK_RED_DIRT = new BlockBaseDirt("block_red_dirt");
+	public static final Block BLOCK_RED_GRASS = new BlockBaseGrass("block_red_grass");
 	
 	public static final Block ORE_END = new BlockBaseOre("ore_end", "end");
 	public static final Block ORE_OVERWORLD = new BlockBaseOre("ore_overworld", "overworld");
