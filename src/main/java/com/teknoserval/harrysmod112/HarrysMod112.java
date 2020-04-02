@@ -35,6 +35,8 @@ public class HarrysMod112 {
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
 		
+		RegistryHandler.initRegistries();
+		
 	}
 	
 	@EventHandler

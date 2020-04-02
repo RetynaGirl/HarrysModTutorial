@@ -1,6 +1,8 @@
 package com.teknoserval.harrysmod112.entity;
 
 import com.teknoserval.harrysmod112.init.ItemInit;
+import com.teknoserval.harrysmod112.util.handlers.LootTableHandler;
+import com.teknoserval.harrysmod112.util.handlers.SoundsHandler;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityAgeable;
@@ -18,6 +20,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
@@ -58,23 +61,31 @@ public class EntityCentaur extends EntityCow {
 	}
 	
 	@Override
+	protected ResourceLocation getLootTable() {
+		// TODO Auto-generated method stub
+		System.out.println("got loot table");
+		return LootTableHandler.CENTAUR;
+		
+	}
+	
+	@Override
 	public EntityCow createChild(EntityAgeable ageable) {
 		return new EntityCentaur(world);
 	}
 	
 	@Override
 	protected SoundEvent getAmbientSound() {
-		return super.getAmbientSound();
+		return SoundsHandler.ENTITY_CENTAUR_AMBIENT;
 	}
 	
 	@Override
 	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-		return super.getHurtSound(damageSourceIn);
+		return SoundsHandler.ENTITY_CENTAUR_HURT;
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
-		return super.getDeathSound();
+		return SoundsHandler.ENTITY_CENTAUR_DEATH;
 	}
 
 	

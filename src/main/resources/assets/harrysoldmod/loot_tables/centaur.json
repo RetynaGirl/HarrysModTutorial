@@ -1,0 +1,96 @@
+{
+    "pools": [
+        {
+            "name": "CentaurMain",
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:leather",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CentaurSpeacial",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 95,
+                    "name": "harrysoldmod:ingot_copper",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "harrysoldmod:sword_copper",
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "smite",
+                                "bane_of_arthropods"
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "operation": "addition",
+                                    "amount": {
+                                        "min": 2,
+                                        "max": 85
+                                    },
+                                    "name": "add_damage",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:skull",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": {
+                                "min": 0,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
