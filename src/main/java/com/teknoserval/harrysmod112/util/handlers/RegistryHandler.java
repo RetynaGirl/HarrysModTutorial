@@ -2,6 +2,7 @@ package com.teknoserval.harrysmod112.util.handlers;
 
 import com.teknoserval.harrysmod112.init.BiomeInit;
 import com.teknoserval.harrysmod112.init.BlockInit;
+import com.teknoserval.harrysmod112.init.EntityInit;
 import com.teknoserval.harrysmod112.init.ItemInit;
 import com.teknoserval.harrysmod112.util.interfaces.IHasModel;
 import com.teknoserval.harrysmod112.world.gen.WorldGenCustomTrees;
@@ -57,12 +58,14 @@ public class RegistryHandler {
 		
 	}
 	
-	public static void otherRegistries() {
+	public static void preInitRegistries() {
 		
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
 		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 		
 		BiomeInit.registerBiomes();
+		EntityInit.registerEntities();
+		RenderHandler.registerEntityRenders();
 		
 	}
 

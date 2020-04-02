@@ -28,7 +28,7 @@ public class HarrysMod112 {
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
 		
-		RegistryHandler.otherRegistries();
+		RegistryHandler.preInitRegistries();
 		
 	}
 	

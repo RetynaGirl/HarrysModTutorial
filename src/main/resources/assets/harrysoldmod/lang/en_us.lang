@@ -15,6 +15,8 @@ item.chestplate_copper.name=Copper Chestplate
 item.leggings_copper.name=Copper Leggings
 item.boots_copper.name=Copper Boots
 
+
+
 //Blocks
 tile.block_copper.name=Copper Block
 tile.block_red_dirt.name=Red Dirt
@@ -42,6 +44,12 @@ tile.leaves_willow_null.name=Willow Leaves
 tile.sapling_mahogany.name=Mahogany Sapling
 tile.sapling_cedar.name=Cedar Sapling
 tile.sapling_willow.name=Willow Sapling
+
+
+
+//Entities
+entity.centaur.name=Centaur
+
 
 
 //Creative tabs
